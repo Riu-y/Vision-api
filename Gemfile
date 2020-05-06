@@ -38,6 +38,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -66,8 +67,9 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 
 gem 'kaminari'
-
+gem 'pry-byebug'
 gem 'therubyracer', platforms: :ruby
+
 
 group :production do
   # Gemfileの1番下に追加しましょう。
